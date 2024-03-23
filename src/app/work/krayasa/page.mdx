@@ -1,0 +1,58 @@
+import logo from '@/images/clients/family-fund/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageDebraFiscal from './debra-fiscal.jpg'
+
+export const caseStudy = {
+  client: 'Krayasa',
+  title: 'Innovating Tomorrow with Breakthrough Solutions',
+  description:
+    'Krayasa is a versatile company leading the frontier of innovation, amalgamating AI, IoT, Digital Marketing, and 3D Printing, and redefining technology’s boundaries for a dynamic future.',
+  summary: [
+    'Born from versatile aspirations, Krayasa has evolved into a pioneering force in innovation. Our journey began with ambitious goals, and today, we lead the way in AI, IoT, Digital Marketing, and 3D Printing, shaping the future of technology with our relentless pursuit of excellence.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Web development, CMS',
+  testimonial: {
+    author: { name: 'Aaraj Bhattrai', role: 'CEO and founder' },
+    content:
+      'Working with Refobe, we felt more like a partner than a customer. They really resonated with our mission and were a pleasure to work with.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Emerging from a landscape of diverse aspirations, Krayasa has emerged as a trailblazer in innovation. 
+Their inception was marked by audacious ambitions, and through the fusion of fresh perspectives and seasoned expertise, 
+they have propelled themselves to the forefront of AI, IoT, Digital Marketing, and 3D Printing. Today, they stand as 
+architects of tomorrow's technology, shaping its contours with a tenacity that defies convention. 
+It is through the harmonious synergy of fresh minds and seasoned professionals that Krayasa has achieved unparalleled advancement.
+
+## What we did
+
+<TagList>
+  <TagListItem>Frontend (Next.js)</TagListItem>
+  <TagListItem>Custom CMS</TagListItem>
+  <TagListItem>SEO</TagListItem>
+  <TagListItem>Infrastructure</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Aaraj Bhattrai', role: 'CEO and founder' }}
+  image={{ src: imageDebraFiscal }}
+>
+  Working with refobe, we felt more like a partner than a customer. They really
+  resonated with our mission and it was a pleasure working with them.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="40%" label="Increased Traffic" />
+  <StatListItem value="10+" label="Success stories" />
+  
+</StatList>
