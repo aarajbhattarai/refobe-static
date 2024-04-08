@@ -20,6 +20,9 @@ import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
 import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
+import ImageSpeed from '@/images/clients/family-fund/speed logo.png'
+import ImageLezlaj from '@/images/lezlajdark.png'
+import logoKrayasa from '@/images/clients/family-fund/krayasa logo.png'
 
 function CaseStudies({
   caseStudies,
@@ -97,14 +100,9 @@ function CaseStudies({
 }
 
 const clients = [
-  ['Phobia', logoPhobia],
-  ['Krayasa', logoFamilyFund],
-  ['unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Speedwings', ImageSpeed],
+  ['Krayasa', logoKrayasa],
+  ['Lezlaj', ImageLezlaj],
 ]
 
 function Clients() {
@@ -119,13 +117,13 @@ function Clients() {
         <Border as={FadeIn} />
         <ul
           role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
+          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-3"
         >
           {clients.map(([client, logo]) => (
-            <li key={client} className="group">
+            <li className="group" key={String(client)}>
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt="company-image-logo" unoptimized />
                 </Border>
               </FadeIn>
             </li>
@@ -153,18 +151,11 @@ export default async function Work() {
       >
         <p>
           We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. 
+          best value to our clients.
         </p>
       </PageIntro>
 
       <CaseStudies caseStudies={caseStudies} />
-
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
-      >
-        We approached <strong>Refobe</strong> because we were impressed by their exceptional track record and portfolio. Their reputation for delivering outstanding results preceded them, and once again, they surpassed our expectations
-      </Testimonial>
 
       <Clients />
 

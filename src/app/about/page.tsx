@@ -39,16 +39,16 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+            Loyalty binds us together, fostering a sense of unity and dedication
+            among our team.
           </GridListItem>
           <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+            Trust is paramount in our organization, building strong
+            relationships and empowering us to achieve collective success.
           </GridListItem>
           <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+            Compassion drives our actions, guiding us to empathize and support
+            one another through every challenge.
           </GridListItem>
         </GridList>
       </Container>
@@ -132,7 +132,7 @@ const team = [
 function Team() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <div className="space-y-24">
+      {/* <div className="space-y-24">
         {team.map((group) => (
           <FadeInStagger key={group.title}>
             <Border as={FadeIn} />
@@ -173,7 +173,8 @@ function Team() {
             </div>
           </FadeInStagger>
         ))}
-      </div>
+      </div> */}
+      {null}
     </Container>
   )
 }
@@ -196,12 +197,10 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-          At Refobe, we're dedicated to connecting businesses with top-tier IT firms and talented professionals, 
-          facilitating mutually beneficial partnerships that drive success. Our platform serves as a comprehensive solution 
-          for organizations seeking to find the right talent and expert teams to execute their projects and IT solutions efficiently.
-          </p>
-          <p>
-          Through our innovative platform, we offer a range of services tailored to meet the unique needs of businesses.
+            Connecting businesses with top-tier IT firms and talented
+            professionals, facilitating mutually beneficial partnerships that
+            drive success. Through our innovative platform, we offer a range of
+            services tailored to meet the unique needs of businesses.
           </p>
         </div>
       </PageIntro>
@@ -209,7 +208,7 @@ export default async function About() {
         <StatList>
           <StatListItem value="35+" label="Devoted professionals" />
           <StatListItem value="10+" label="Satified clients" />
-          <StatListItem value="45" label="Some Metric" />
+          <StatListItem value="110%" label="Attention to detail" />
         </StatList>
       </Container>
 

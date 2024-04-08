@@ -65,7 +65,13 @@ function Discover() {
         </p>
 
         <p>
-          At Refobe, our dedicated team conducts thorough research to understand the requirements of modern-day businesses in the realm of IT and internet marketing solutions. With a focus on IT for business, we stay updated on the latest industry trends to tailor our solutions accordingly. By leveraging our expertise in IT and internet marketing solutions, we help businesses achieve their goals in today's competitive landscape.
+          At Refobe, our dedicated team conducts thorough research to understand
+          the requirements of modern-day businesses in the realm of IT and
+          internet marketing solutions. With a focus on IT for business, we stay
+          updated on the latest industry trends to tailor our solutions
+          accordingly. By leveraging our expertise in IT and internet marketing
+          solutions, we help businesses achieve their goals in today&apos;s
+          competitive landscape.
         </p>
       </div>
 
@@ -76,8 +82,6 @@ function Discover() {
         <TagListItem>In-depth questionnaires</TagListItem>
         <TagListItem>Market study</TagListItem>
         <TagListItem>Lost of Research</TagListItem>
-
-
       </TagList>
     </Section>
   )
@@ -89,20 +93,24 @@ function Build() {
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. 
-          </p>
-          <p>
-          We embark on a journey of understanding our clients' goals 
-          and meticulously analyzing the most effective path to fulfill their needs. Our approach is rooted in collaboration, 
-          as we work closely with our clients to gain insight into their objectives, challenges, and aspirations. 
+          for each product and start working towards delivery.
+        </p>
+        <p>
+          We embark on a journey of understanding our client&apos;s goals and
+          meticulously analyzing the most effective path to fulfill their needs.
+          Our approach is rooted in collaboration, as we work closely with our
+          clients to gain insight into their objectives, challenges, and
+          aspirations.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Saroj Phuyal', role: 'CEO of Speedwings' }}
+        author={{ name: 'Prabish Dangi', role: 'CTO at Lezlaj' }}
         className="mt-12"
       >
-       Refobe's consistent progress updates kept us fully informed throughout the entire project lifecycle, ensuring we were always aware of the project's status and progress.
+        Refobe&apos;s consistent progress updates kept us fully informed
+        throughout the entire project lifecycle, ensuring we were always aware
+        of the project&apos;s status and progress.
       </Blockquote>
     </Section>
   )
@@ -113,16 +121,16 @@ function Deliver() {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-        With precision and dedication, we work tirelessly to transform ideas into reality.
-         Throughout the process, we remain committed to transparency and communication, 
-        keeping our clients informed every step of the way. And{' '}
-          <strong className="font-semibold text-neutral-950">
-            finally
-          </strong>
+          With precision and dedication, we work tirelessly to transform ideas
+          into reality. Throughout the process, we remain committed to
+          transparency and communication, keeping our clients informed every
+          step of the way. And{' '}
+          <strong className="font-semibold text-neutral-950">finally </strong>
           We deliver the product you desire!
         </p>
         <p>
-        In no time, you'll have a product that perfectly suits your business needs and leaves you satisfied.
+          In no time, you&apos;ll have a product that perfectly suits your
+          business needs and leaves you satisfied.
         </p>
       </div>
 
@@ -131,16 +139,13 @@ function Deliver() {
       </h3>  */}
       {/* <List className="mt-8">
          <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+          Our projects always have 100% test coverage, ensuring a bug-free experience.
         </ListItem> 
          <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+          To ensure reliability we only use the best infrastructure.
         </ListItem>
         <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+           You can expect a lifetime of support from us.
         </ListItem> 
       </List> */}
     </Section>
@@ -162,32 +167,35 @@ function Values() {
         title="Balancing reliability and innovation"
       >
         <p>
-       We're dedicated to leading the way in emerging trends and technologies, ensuring our partners in IT jobs, IT recruitment, and business IT solutions receive top-quality products that reflect industry trends and our core values. That's our commitment at Refobe.
+          We&apos;re dedicated to leading the way in emerging trends and
+          technologies, ensuring our partners in IT jobs, IT recruitment, and
+          business IT solutions receive top-quality products that reflect
+          industry trends and our core values. That&apos;s our commitment at
+          Refobe.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
-      <GridList>
-  <GridListItem title="Co-operation">
-    Working together seamlessly to achieve shared goals.
-  </GridListItem>
-  <GridListItem title="Efficiency">
-    Streamlining processes for optimal performance.
-  </GridListItem>
-  <GridListItem title="Adaptability">
-    Flexibility to adjust to changing circumstances.
-  </GridListItem>
-  <GridListItem title="Honesty">
-    Transparency and integrity in all interactions.
-  </GridListItem>
-  <GridListItem title="Communication">
-    Open and effective exchange of information.
-  </GridListItem>
-  <GridListItem title="Innovation">
-    Embracing creativity to drive progress and growth.
-  </GridListItem>
-</GridList>
-
+        <GridList>
+          <GridListItem title="Co-operation">
+            Working together seamlessly to achieve shared goals.
+          </GridListItem>
+          <GridListItem title="Efficiency">
+            Streamlining processes for optimal performance.
+          </GridListItem>
+          <GridListItem title="Adaptability">
+            Flexibility to adjust to changing circumstances.
+          </GridListItem>
+          <GridListItem title="Honesty">
+            Transparency and integrity in all interactions.
+          </GridListItem>
+          <GridListItem title="Communication">
+            Open and effective exchange of information.
+          </GridListItem>
+          <GridListItem title="Innovation">
+            Embracing creativity to drive progress and growth.
+          </GridListItem>
+        </GridList>
       </Container>
     </div>
   )

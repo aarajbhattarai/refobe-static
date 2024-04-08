@@ -9,9 +9,9 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'Krayasa', href: '/work/krayasa' },
-      { title: 'Atkans', href: '/work/atkans' },
-      { title: 'Speedwings', href: '/work/phobia' },
+      { title: 'Speedwings', href: '/work/krayasa' },
+      { title: 'AI', href: '/work/unseal' },
+      { title: 'Lezlaj', href: '/work/phobia' },
       {
         title: (
           <>
@@ -125,7 +125,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Refobe. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

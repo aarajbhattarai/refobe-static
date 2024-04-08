@@ -35,14 +35,14 @@ export function Offices({
         <Office name="Kathmandu" invert={invert}>
           Kalopul, Sifal
           <br />
-          12 Example Marg
+          Dharma Bhakta Marg
         </Office>
       </li>
       <li>
-        <Office name="Pokhara" invert={invert}>
-          Lakeside, Pokhara
+        <Office name="Kathmandu" invert={invert}>
+          Chakrapath
           <br />
-          21 Example Street
+          {/* Ringroad */}
         </Office>
       </li>
     </ul>

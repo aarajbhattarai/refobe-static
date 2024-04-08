@@ -28,6 +28,9 @@ export default {
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      colors:{
+        "neon": "#bcf40b",
+      }
     },
   },
   plugins: [],

@@ -10,7 +10,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
+import logoKrayasa from '@/images/clients/family-fund/krayasa logo.png'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
@@ -19,17 +19,15 @@ import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
+import ImageSpeed from '@/images/clients/family-fund/speed logo.png'
+import ImageLezlaj from '@/images/Lezlaj.png'
+
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['krayasa', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['krayasa', logoKrayasa],
+  ['speedwings', ImageSpeed],
+  ['lezlaj', ImageLezlaj],
 ]
 
 function Clients() {
@@ -38,19 +36,19 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-          Clients we've helped with IT recruitment and software development services.
+            Clients we &apos;ve helped with out IT and software services.
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-10 grid grid-cols-2 items-center gap-x-10 gap-y-10 lg:grid-cols-3"
           >
             {clients.map(([client, logo]) => (
-              <li key={client}>
+              <li key={String(client)}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt="" unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -73,7 +71,8 @@ function CaseStudies({
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        Experience the difference of working with a partner committed to excellence, efficiency, and complete satisfaction.
+          Experience the difference of working with a partner committed to
+          excellence, efficiency, and complete satisfaction.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -128,7 +127,8 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        At Refobe, we don't just match candidates with jobs – we forge lasting partnerships that drive mutual success.
+          At Refobe, we don&apos;t just match candidates with jobs – we forge
+          lasting partnerships that drive mutual success.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -144,17 +144,20 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Web development">
-            We specialize in crafting stunning, high-quality pages. Because when it comes to top businesses, only the best will do.
+              We specialize in crafting stunning, high-quality pages. Because
+              when it comes to top businesses, only the best will do.
             </ListItem>
             <ListItem title="Application development">
               We have a team of skilled developers who are experts in the latest
               app frameworks, according to your products demands.
             </ListItem>
             <ListItem title="Digital Marketing and SEO">
-            Maximize your business’s reach by boosting your online presence with driven experts who stay ahead of market trends.
+              Maximize your business’s reach by boosting your online presence
+              with driven experts who stay ahead of market trends.
             </ListItem>
             <ListItem title="Artificial Intelligence">
-            Elevate your AI initiatives with the top 1% who proactively stay ahead of the curve in emerging industry trends and technologies
+              Elevate your AI initiatives with the top 1% who proactively stay
+              ahead of the curve in emerging industry trends and technologies
             </ListItem>
           </List>
         </div>
@@ -176,11 +179,13 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-          Your global team building efforts simplified
+            Your global team building efforts simplified
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-          Work with professionals who possess expertise in simplifying intricate challenges to propel your business.
-          Elevate your organization's success by partnering with our elite team of IT professionals. 
+            Work with professionals who possess expertise in simplifying
+            intricate challenges to propel your business. Elevate your
+            organization&apos;s success by partnering with our elite team of IT
+            professionals.
           </p>
         </FadeIn>
       </Container>
@@ -191,9 +196,13 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Phobia', logo: ImageSpeed }}
       >
-        Our collaboration with Refobe surpassed expectations during our onboarding process. Their proactive efforts ensured a smooth and efficient experience for our users, while their attention to detail and responsiveness throughout the project demonstrated their commitment to excellence 
+        Our collaboration with Refobe surpassed expectations during our
+        onboarding process. Their proactive efforts ensured a smooth and
+        efficient experience for our users, while their attention to detail and
+        responsiveness throughout the project demonstrated their commitment to
+        excellence
       </Testimonial>
 
       <Services />

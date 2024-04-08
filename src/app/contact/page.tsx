@@ -100,7 +100,7 @@ function ContactDetails() {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? Visit us anytime ! 
+        Prefer doing things in person? Visit us anytime !
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
