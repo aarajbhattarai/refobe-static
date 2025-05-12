@@ -32,17 +32,8 @@ export function Offices({
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Kathmandu" invert={invert}>
-          Kalopul, Sifal
-          <br />
-          Dharma Bhakta Marg
-        </Office>
-      </li>
-      <li>
-        <Office name="Kathmandu" invert={invert}>
-          Chakrapath
-          <br />
-          {/* Ringroad */}
+        <Office name="USA" invert={invert}>
+        6272 Black Butte,Schertz,Texas,United States
         </Office>
       </li>
     </ul>
