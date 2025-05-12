@@ -32,7 +32,7 @@ export function Offices({
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="USA" invert={invert}>
+        <Office name="Refobe, LLC" invert={invert}>
         6272 Black Butte,Schertz,Texas,United States
         </Office>
       </li>
